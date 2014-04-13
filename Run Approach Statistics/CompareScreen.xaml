@@ -1,0 +1,58 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Run_Approach_Statistics.CompareScreen" WindowState="Maximized"
+	x:Name="Compare" Width="1920" Height="1080" Background="White">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="550*"/>
+			<ColumnDefinition Width="1379*"/>
+		</Grid.ColumnDefinitions>
+		<Rectangle HorizontalAlignment="Left" Height="216.418" VerticalAlignment="Top" Width="670.89" Grid.Column="1" Margin="692.786,10,0,0"/>
+		<Rectangle HorizontalAlignment="Left" Height="216.418" VerticalAlignment="Top" Width="670.89" Grid.Column="1" Margin="12.22,10,0,0"/>
+        <Image HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="498" Margin="30,10,0,0" Source="Logo.png"/>
+        <Button Content="Start Session" Margin="100,342,0,0" VerticalAlignment="Top" Height="75" FontSize="32" Width="350" HorizontalAlignment="Left" Click="Session_Button"/>
+        <Button Content="Select Vault" HorizontalAlignment="Left" Margin="100,480.8,0,0" VerticalAlignment="Top" Width="350" Height="75" FontSize="32" Click="Vault_Button"/>
+        <Button Content="Settings" HorizontalAlignment="Left" Margin="100,766.4,0,0" VerticalAlignment="Top" Width="350" Height="75" FontSize="32" Click="Settings_Button"/>
+        <Button Content="Gymnasts Profiles" HorizontalAlignment="Left" Margin="100,622.416,0,0" VerticalAlignment="Top" Width="350" Height="75" FontSize="32" Click="Gymnast_Button"/>
+        <TextBox HorizontalAlignment="Left" Margin="12.22,241.192,0,0" TextWrapping="Wrap" Text="&#xA;&#xA;&#xA;Video 1" VerticalAlignment="Top" TextAlignment="Center" Width="672" Height="378" Grid.Column="1" FontSize="32"/>
+		<TextBox HorizontalAlignment="Left" Margin="15.786,630.192,0,0" TextWrapping="Wrap" Text="&#xA;&#xA;&#xA;Graph&#xA;(distance)" VerticalAlignment="Top" TextAlignment="Center" Width="672" Height="320" Grid.Column="1" FontSize="32"/>
+		<TextBox HorizontalAlignment="Left" Margin="692.786,630.192,0,0" TextWrapping="Wrap" Text="&#xA;&#xA;&#xA;Graph&#xA;(speed)" VerticalAlignment="Top" TextAlignment="Center" Width="672" Height="320" Grid.Column="1" FontSize="32"/>
+		<TextBox HorizontalAlignment="Right" Margin="0,241.192,6.67,0" TextWrapping="Wrap" Text="&#xA;&#xA;&#xA;Video 2" VerticalAlignment="Top" TextAlignment="Center" Width="672" Height="378" Grid.Column="1" FontSize="32"/>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="33.199,26.418,0,0" FontSize="32"><Run Text="Full name"/><Run Language="en-gb" Text=":"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="33.198,76.418,0,0" FontSize="32"><Run Language="en-gb" Text="Date:"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="33.199,126.418,0,0" FontSize="32"><Run Language="en-gb" Text="Vault "/><Run Language="nl-nl" Text="Number"/><Run Language="en-gb" Text=":"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="33.199,176.418,0,0" FontSize="32"><Run Language="nl-nl" Text="Total Score"/><Run Language="en-gb" Text=":"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Text="&lt;name&gt;" VerticalAlignment="Top" Grid.Column="1" Margin="283.199,26.418,0,0" FontSize="32"/>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="283.199,76.418,0,0" FontSize="32"><Run Language="en-gb" Text="&lt;date&gt;"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="283.199,126.418,0,0" FontSize="32"><Run Language="en-gb" Text="&lt;type&gt;"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="283.199,176.418,0,0" FontSize="32"><Run Language="en-gb" Text="&lt;rating&gt;"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="721.259,26.418,0,0" FontSize="32"><Run Text="Full name"/><Run Language="en-gb" Text=":"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="721.259,76.418,0,0" FontSize="32"><Run Language="en-gb" Text="Date:"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="721.259,126.418,0,0" FontSize="32"><Run Language="en-gb" Text="Vault "/><Run Language="nl-nl" Text="Number"/><Run Language="en-gb" Text=":"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="721.259,176.418,0,0" FontSize="32"><Run Language="nl-nl" Text="Total Score"/><Run Language="en-gb" Text=":"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Text="&lt;name&gt;" VerticalAlignment="Top" Grid.Column="1" Margin="971.259,26.418,0,0" FontSize="32"/>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="971.259,76.418,0,0" FontSize="32"><Run Language="en-gb" Text="&lt;date&gt;"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="971.259,126.418,0,0" FontSize="32"><Run Language="en-gb" Text="&lt;type&gt;"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="971.259,176.418,0,0" FontSize="32"><Run Language="en-gb" Text="&lt;rating&gt;"/></TextBlock>
+		<Rectangle HorizontalAlignment="Left" Height="216.418" VerticalAlignment="Top" Width="128" Margin="555.11,10,0,0" Fill="Red" Grid.Column="1"/>
+		<Rectangle HorizontalAlignment="Left" Height="216.418" VerticalAlignment="Top" Width="128" Margin="1237.896,10,0,0" Fill="Blue" Grid.Column="1"/>
+		<Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="114.808" Margin="15.786,955.192,0,0" VerticalAlignment="Top" Width="1346.78"/>
+		<CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="567.548,101,0,0" FontSize="13.333" Grid.Column="1" IsChecked="True" Content="Select" Foreground="White">
+			<CheckBox.LayoutTransform>
+				<ScaleTransform ScaleX="2" ScaleY="2" />
+			</CheckBox.LayoutTransform>
+		</CheckBox>
+		<Slider Grid.Column="1" HorizontalAlignment="Left" Margin="33.198,965.192,0,0" VerticalAlignment="Top" Width="1313.367" Height="24"/>
+		<Image Grid.Column="1" Margin="660.689,995.192,647.876,20.808" Source="play.png" Stretch="Fill" Width="64" Height="64"/>
+		<Image Grid.Column="1" Margin="740.689,1003.192,567.876,28.808" Source="next.png" Stretch="Fill" Width="64" Height="48"/>
+		<Image Grid.Column="1" Margin="577.109,1003.192,731.456,28.808" Source="prev.png" Stretch="Fill" Width="64" Height="48"/>
+		<TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="33.197,996.092,0,0" VerticalAlignment="Top" FontSize="37.333"><Run Language="nl-nl" Text="0:00:00:00 - 0:00:24:64 "/></TextBlock>
+		<CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1253.06,105.5,0,0" FontSize="13.333" Grid.Column="1" IsChecked="True" Content="Select" Foreground="White">
+			<CheckBox.LayoutTransform>
+				<ScaleTransform ScaleX="2" ScaleY="2" />
+			</CheckBox.LayoutTransform>
+		</CheckBox>
+	</Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Run_Approach_Statistics.MainScreen" WindowState="Maximized"
+	x:Name="Main" Width="1797.015" Height="1035.821" Background="White">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="550*"/>
+            <ColumnDefinition Width="1379*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="498" Margin="30,-49,0,0" Source="Logo.png"/>
+        <Button Content="Start  Session" Margin="100,390,0,0" VerticalAlignment="Top" Height="75" FontSize="32" Width="350" HorizontalAlignment="Left" Click="Session_Button"/>
+        <Button Content="Select Vault" HorizontalAlignment="Left" Margin="100,501,0,0" VerticalAlignment="Top" Width="350" Height="75" FontSize="32" Click="Vault_Button"/>
+        <Button Content="Settings" HorizontalAlignment="Left" Margin="100,724,0,0" VerticalAlignment="Top" Width="350" Height="75" FontSize="32" Click="Settings_Button"/>
+        <Button Content="Gymnasts Profiles" HorizontalAlignment="Left" Margin="100,614,0,0" VerticalAlignment="Top" Width="350" Height="75" FontSize="32" Click="Gymnast_Button"/>
+        <Button Content="Set Pilot Laser On" Margin="100,288,0,0" VerticalAlignment="Top" Height="75" Name="PilotButton" FontSize="32" Width="350" HorizontalAlignment="Left"  Click="Pilot_Button"/>
+        <Ellipse Name="RedDot" Margin="409,314,0,0" Fill="Red" Width="25" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Hidden"/>
+
+        <Image HorizontalAlignment="Left" Margin="67,10,0,0" VerticalAlignment="Top" Width="1290" Height="726" Source="Video.jpg" Grid.Column="1"/>
+        <Image Source="MainGraph.png" Grid.Column="1" Margin="67,742,10,10"/>
+        <Rectangle HorizontalAlignment="Left" Height="103" Margin="67,634,0,0" VerticalAlignment="Top" Width="1290" Grid.Column="1" Fill="#8D000000" />
+        <Slider Grid.Column="1" HorizontalAlignment="Left" Margin="84,646,0,0" VerticalAlignment="Top" Width="1251" Height="22" Foreground="#FFD4D4D4" ValueChanged="Slider_ValueChanged" Maximum="24640" LargeChange="1000"/>
+        <Image Grid.Column="1" Margin="0,665,619,0" Source="play2.png" Height="64" VerticalAlignment="Top" HorizontalAlignment="Right" Width="64"/>
+        <Image Grid.Column="1" Margin="0,673,538,0" Source="next2.png" Height="48" VerticalAlignment="Top" HorizontalAlignment="Right" Width="64"/>
+        <Image Grid.Column="1" Margin="0,673,703,0" Source="prev2.png" Height="48" VerticalAlignment="Top" HorizontalAlignment="Right" Width="64" />
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="84,675,0,0" Name="Timetext" VerticalAlignment="Top" FontSize="37.333" Foreground="White" Text="00:00:000 - 00:24:640"/>
+    </Grid>
+</Window>

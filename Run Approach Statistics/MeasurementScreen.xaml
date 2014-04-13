@@ -1,0 +1,80 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Run_Approach_Statistics.MeasurementScreen" WindowState="Maximized"
+	x:Name="Measurement" Width="1920" Height="1044" Background="White">
+
+    <Grid x:Name="LayoutRoot">
+        <Rectangle Fill="#FFDC0E0E" HorizontalAlignment="Left" Height="1080" Margin="296.5,0,0,0" Name="RedBackground" Stroke="Black" VerticalAlignment="Top" Width="1170"/>
+        <TextBox HorizontalAlignment="Left" Margin="315,23.069,0,0" TextWrapping="Wrap" Text="&#xA;&#xA;Video" VerticalAlignment="Top" TextAlignment="Center" Width="1130" Height="647" Grid.Column="0"/>
+        <TextBox HorizontalAlignment="Left" Margin="315,683,0,0" TextWrapping="Wrap" Text="&#xA;&#xA;Graph&#xA;(distance &amp; speed)" VerticalAlignment="Top" TextAlignment="Center" Width="1130" Height="320" Grid.Column="0"/>
+        <Button Content="Stop Session" Margin="1495,939,39,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="378" Height="64" FontSize="32" Click="Stop_Button"/>
+        <Rectangle HorizontalAlignment="Left" Height="202.12" VerticalAlignment="Top" Width="266" Margin="9.5,7.28,0,0" Fill="LightBlue"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="296.5" Grid.Column="0"/>
+        <TextBox HorizontalAlignment="Left" Height="133" TextWrapping="Wrap" Text="&#xD;&#xA;&#xD;&#xA;Live Vault" VerticalAlignment="Top" Width="256" Margin="14.5,12.127,0,0" TextAlignment="Center" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="256" Margin="14.5,145.127,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Date &amp; Time" VerticalAlignment="Top" Width="256" Margin="14.5,174.763,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" Height="133" TextWrapping="Wrap" Text="&#xA;&#xA;Thumbnail" VerticalAlignment="Top" Width="256" Margin="14,262.28,0,0" TextAlignment="Center" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="256" Margin="14,395.28,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Date &amp; Time" VerticalAlignment="Top" Width="256" Margin="14,424.916,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" Height="133" TextWrapping="Wrap" Text="&#xA;&#xA;Thumbnail" VerticalAlignment="Top" Width="256" Margin="13.5,509.156,0,0" TextAlignment="Center" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="256" Margin="13.5,642.155,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Date &amp; Time" VerticalAlignment="Top" Width="256" Margin="13.5,671.791,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" Height="133" TextWrapping="Wrap" Text="&#xA;&#xA;Thumbnail" VerticalAlignment="Top" Width="256" Margin="13.5,760.56,0,0" TextAlignment="Center" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="256" Margin="13.5,893.559,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Date &amp; Time" VerticalAlignment="Top" Width="256" Margin="13.5,923.195,0,0" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1499,423,0,0" FontSize="24" Width="99" RenderTransformOrigin="0.723,0.453"><Run Language="nl-nl" Text="Gymnast: "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1499,485,0,0" FontSize="24"><Run Language="nl-nl" Text="Vault Number:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1499,361,0,0" FontSize="24" Width="89"><Run Language="nl-nl" Text="Location:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1499,297,0,0" FontSize="24" Width="142"><Run Language="nl-nl" Text="Competition:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1499,534,0,0" FontSize="24" Width="87"><Run Language="nl-nl" Text="Rating:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1499,582,0,0" FontSize="24" Width="94"><Run Language="nl-nl" Text="D-score:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1499,640,0,0" FontSize="24"><Run Language="nl-nl" Text="E-score:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1666,423,0,0" FontStyle="Italic" Width="180" Text="Michel" FontSize="24" Height="30"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1666,485,0,0" FontStyle="Italic" Width="180" Text="139.2" FontSize="24" Height="30"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1666,361,0,0" FontStyle="Italic" Width="180" Text="Flik flak" FontSize="24" Height="30" RenderTransformOrigin="0.225,-2.513"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1666,582,0,0" FontStyle="Italic" Width="180" Text="8.000" FontSize="24" Height="30"/>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1666,640,0,0" FontStyle="Italic" Width="180" Text="7.000" FontSize="24" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" Text="★★★★☆" VerticalAlignment="Top" Margin="1666,526,0,0" FontSize="28" Width="180" Height="30"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="1666,297,0,0" FontSize="20
+                  " Height="32">
+            <ComboBoxItem Content="Practice vault"/>
+            <ComboBoxItem Content="Competitive vault" IsSelected="True"/>
+        </ComboBox>
+        <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1502,809,0,0" FontSize="14" Content="Manual mode" Checked="EnableManualMode" Unchecked="DisableManualMode">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,357,16,0" FontSize="14" Content="" IsChecked="True">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,419,16,0" FontSize="14" Content="">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,298,16,0" FontSize="14" Content="">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,481,16,0" FontSize="14" Content="">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <Image HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="498" Margin="1457.566,-13.72,-35.566,0" Source="Logo.png"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1499,698,0,0" FontSize="24"><Run Language="nl-nl" Text="Penalty:"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1666,698,0,0" FontStyle="Italic" Width="180" Text="0.4" FontSize="24" Height="30"/>
+        <Button Name="ManualMeasurementButton" Content="Start Measurement" Margin="1495,857,39,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="378" Height="64" FontSize="32" IsEnabled="False" Click="Measurement_Button"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1499,757,0,0" FontSize="24"><Run Text="Total Score"/><Run Language="nl-nl" Text=":"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1666,757,0,0" FontStyle="Italic" Width="180" Text="15.000" FontSize="24" Height="30"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Vault Number: 3.02" VerticalAlignment="Top" Width="256" Margin="14.5,202.643,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Vault Number: 3.10" VerticalAlignment="Top" Width="256" Margin="14.5,454.552,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Vault Number: 3.10" VerticalAlignment="Top" Width="256" Margin="13.5,701.427,0,0" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="Vault Number: 3.10" VerticalAlignment="Top" Width="256" Margin="14.5,952.831,0,0" FontSize="24"/>
+    </Grid>
+</Window>
